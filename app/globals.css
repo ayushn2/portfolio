@@ -18,10 +18,15 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
+  margin-bottom:50px ;
+  /* background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
+    /* background: linear-gradient(to bottom, #000000, #3b3838); */
+    /* background: linear-gradient(165deg, #000000, #3b3838); */
+    background: linear-gradient(115deg, #000000, #000000, #98b22e4d);
+    background-color: black;
 }
