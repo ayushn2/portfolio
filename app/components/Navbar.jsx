@@ -9,8 +9,10 @@ import Image from 'next/image'
 const Navbar = () => {
     const [toggle,setToggle]= useState(false)
   return (
-    <nav className="w-full flex py-6 justify-between items-center navbar lg:h-[108px] fixed z-[100] sm:h-[9px]">
-        <h1 className="text-6xl font-semi-bold">Pride</h1>
+    <nav className="w-full flex py-6 justify-between items-center navbar lg:h-[108px] fixed z-[100] sm:h-[9px] bg-[rgba(0,0,0,0.2)]">
+        <h1 className="text-6xl font-semi-bold ml-6">
+          <span className="text-[#98B22E]">{"<A"}</span>yush<span className="text-[#98B22E]">{"/>"}</span>
+        </h1>
         <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         
         {navLinks.map((nav,index)=>(

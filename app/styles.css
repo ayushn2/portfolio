@@ -1,5 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Fuggles&family=Roboto:wght@100&family=Shadows+Into+Light&family=Source+Code+Pro:wght@300&display=swap');
 
+::-webkit-scrollbar{
+    width:2px;
+    height: 10px;
+  }
+  
+  /* Track */
+  
+::-webkit-scrollbar-track{
+    background: rgba(255,255,255,0.23);
+}
+  
+  /* Handle */
+  
+::-webkit-scrollbar-thumb{
+    background: white;
+    height: 10px;
+}
+
 h1{
     font-family: 'Fuggles', cursive;
 }

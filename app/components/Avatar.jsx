@@ -3,20 +3,30 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import {useAnimations} from "@react-three/drei";
 import CanvasLoader from "./Loader";
+import { useRef } from "react";
 
 const Avatar = ({ isMobile }) => {
+  const [play,setPlay] = useState(0)
   const avatar = useGLTF("./desktop_pc/avatar.glb");
   const { actions, names } = useAnimations(avatar.animations, avatar.scene);
 	useEffect(() => {
 		actions.Waving.play();
+    
 	},[]);
+  // const hasEffectRun = useRef(false);
+  // useEffect(() => {
+  //   if (!hasEffectRun.current) {
+  //     actions.Waving.play();
+  //     hasEffectRun.current = true;
+  //   }
+  // }, [actions.Waving]);
   return (
     <group>
       <hemisphereLight intensity={0.45} groundColor='black' />
       <primitive
         object={avatar.scene}
-        scale={[4, 4, 4]}
-        position={isMobile ? [0, -3, 0] : [0, -3.95, 0]}
+        scale={innerWidth<innerHeight?[4, 4, 4]:[4.5,4.5,4.5]}
+        position={innerWidth<innerHeight ? [0, -3, 0] : [0.6, -4.35, 0]}
         rotation={[0,1.25,0]}
 />
 
