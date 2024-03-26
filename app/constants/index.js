@@ -1,3 +1,11 @@
+import Rect from "@/components/icons/Rect"
+import Tailwind from "@/components/icons/Tailwind"
+import Noxt from "@/components/icons/Noxt"
+import JavaScript from "@/components/icons/JavaScript"
+import Typescript from "@/components/icons/Typescript"
+import Mongodb from "@/components/icons/Mangod"
+
+
 const navLinks = [
     {
       id: "about",
@@ -16,37 +24,33 @@ const navLinks = [
 export const skills=[
     {
       id:1,
-      title : "React",
-      knowledge : 80,
+      title : "react",
+      img:<Rect/>,
     },
     {
       id:2,
-      title : "Tailwind",
-      knowledge : 70,
+      title : "tailwind",
+      img:<Tailwind/>,
     },
     {
       id:3,
-      title : "Python",
-      knowledge : 50,
-    },
-    {
-      title : "JavaScript",
-      knowledge : 60,
+      title : "next",
+      img:<Noxt/>,
     },
     {
       id:4,
-      title : "C++",
-      knowledgs : 40,
+      title : "javascript",
+      img:<JavaScript/>,
     },
     {
       id:5,
-      title : "Django",
-      knowledge : 0,
+      title : "typescript",
+      img:<Typescript/>,
     },
     {
       id:6,
-      title : "Next.js",
-      knowledge : 10, 
+      title :"mangod",
+      img:<Mongodb/>,
     }
 ];
 

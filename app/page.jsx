@@ -1,14 +1,15 @@
 "use client"
 
 import Image from 'next/image'
-import Navbar from './components/Navbar'
-import About from './components/About';
+
+import About from '@/components/About';
 import { useClient } from 'react';
-import Hero from './components/Hero';
-import ParticleContainer from './components/ParticleContainer';
+import Hero from '@/components/Hero';
+import ParticleContainer from '@/components/ParticleContainer';
 import Particles from 'react-tsparticles';
 import {loadFull} from "tsparticles"
 import { useCallback } from 'react';
+import Footer from '@/components/Footer';
 
 
 export default function Home() {
@@ -18,8 +19,8 @@ export default function Home() {
 },[]);
   return (
   <div>
-    <Navbar/>
-    <div className='lg:h-[1px] h-[108px]' />
+  
+    <div className='lg:h-[14px] h-[118px] md:[188px]' />
     <Particles 
     className='w-full h-full absolute translate-z-0 z-6'
     id='tsparticles' 
@@ -57,10 +58,10 @@ export default function Home() {
         },
         particles:{
             color:{
-                value:'#e68e2e'
+                value:'#7393B3'
             },
             links:{
-                color:'#f5d393',
+                color:'#7393B3',
                 distance:150,
                 enable:true,
                 opacity:0.5,
@@ -101,6 +102,7 @@ export default function Home() {
     />
     <About/>
     <Hero/>
+    <Footer/>
    </div>
   
   )
