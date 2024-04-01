@@ -105,10 +105,10 @@ const AnimatedContent = () => {
                    
                   </>
                 )}
-                <div className="pulsing-icon flex aspect-square shrink-0 items-center justify-center rounded-full border-blue-50/30 bg-blue-50/25 p-3 text-blue-100 opacity-90 h-[90px]">
+                <div className="pulsing-icon flex aspect-square shrink-0 items-center justify-center rounded-full  border-blue-50/30 bg-blue-50/25 p-3 text-blue-100 opacity-90 h-[90px] w-[90px] md:h-[75px] md:w-[75px] lg:h-[90px] lg:w-[90px] ">
 
                 {icons[item.title]}
-                  {console.log(item.title)}
+                 
                 </div>
                 {index !== skills.length - 1 && (
                   <div className={clsx("signal-line",index>=Math.floor(skills.length/2)?"rotate-180":"rotate-0")}/>

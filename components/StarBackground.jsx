@@ -6,7 +6,7 @@ function StarBackground() {
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 2030 978"
-        className="absolute left-1/2 top-1/3 -translate-x-1/2 -translate-y-1/3 w-full"
+        className="lg:absolute lg:flex hidden left-1/2 top-1/3 -translate-x-1/2 -translate-y-1/3 w-full "
       >
         <g strokeWidth="2" filter="url(#filter0_d_254_9762)" >
           <path

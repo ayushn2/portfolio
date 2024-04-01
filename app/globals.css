@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Mukta:wght@200;300;400;500;600;700;800&family=Permanent+Marker&display=swap');
 
 @layer base {
   :root {
@@ -46,6 +47,7 @@
     --destructive-foreground: 210 40% 98%;
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
+    --input-trans:hsla(217.2, 32.6%, 17.5%, 0.5);
     --ring: 224.3 76.3% 48%;
   }
 }
@@ -71,12 +73,27 @@
   }
 }
 
+.my_work{
+  background: linear-gradient(to top, hsl(217.2, 32.6%, 17.5%), hsl(222.2, 84%, 4.9%));
+ 
+}
+
+p{
+  font-family: "Mukta", sans-serif
+}
+
 @layer base {
   * {
     @apply border-border;
   }
   body {
     @apply bg-background text-foreground;
-    width: 100%;
+   
   }
+}
+@media (max-width:767px){
+  body{
+    
+  }
+ 
 }

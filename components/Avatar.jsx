@@ -23,6 +23,18 @@ const Avatar = ({ isMobile }) => {
   return (
     <group>
       <hemisphereLight intensity={0.45} groundColor='black' />
+      <directionalLight
+        intensity={0.6} // Adjust intensity as needed
+        position={[5, 0, 5]} // Adjust position to focus on the avatar
+        castShadow // Enable shadow casting
+        shadow-mapSize-width={1024} // Shadow map size
+        shadow-mapSize-height={1024}
+        shadow-camera-far={50} // Shadow camera settings
+        shadow-camera-left={-10}
+        shadow-camera-right={10}
+        shadow-camera-top={10}
+        shadow-camera-bottom={-10}
+      />
       <primitive
         object={avatar.scene}
         scale={innerWidth<innerHeight?[4, 4, 4]:[4.5,4.5,4.5]}
