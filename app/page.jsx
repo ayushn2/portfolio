@@ -11,6 +11,8 @@ import {loadFull} from "tsparticles"
 import { useCallback } from 'react';
 import Footer from '@/components/Footer';
 import Projects from '@/components/Projects';
+import Contact from '@/components/Contact';
+
 
 
 export default function Home() {
@@ -104,6 +106,7 @@ export default function Home() {
     <About/>
     <Hero/>
     <Projects/>
+    <Contact/>
     <Footer/>
    </div>
   

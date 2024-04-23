@@ -12,6 +12,8 @@ import Tailwind from './icons/Tailwind'
 import Mangod from './icons/Mangod'
 import JavaScript from './icons/JavaScript'
 import Typescript from './icons/Typescript'
+import { motion } from 'framer-motion'
+import { fadeIn } from '@/variants'
 
 const AnimatedContent = () => {
 
@@ -93,13 +95,34 @@ const AnimatedContent = () => {
 
 
   return (
-    <div className="mx-auto mt-20 flex flex-col items-center justify-center md:flex-row" ref={container}>
+    <motion.div
+    variants={fadeIn('up',0.5)}
+    initial='hidden'
+    whileInView={'show'}
+    viewport={{once:false,amount:0.3}} 
+    className="mx-auto mt-20 flex flex-col items-center justify-center md:flex-row" ref={container}>
           {skills.map((item,index)=>{
             return(
               <React.Fragment key={index}>
                 {index === Math.floor(skills.length/2)&& (
                   <>
-                    <StylizedLogoMark/>
+                  <motion.div
+                  animate={{
+                    scale: [1, 1.5, 1.5, 1, 1],
+                    rotate: [0, 0, 180, 180, 0],
+                    borderRadius: ["0%", "0%", "50%", "50%", "0%"]
+                  }}
+                  transition={{
+                    duration: 2,
+                    ease: "easeInOut",
+                    times: [0, 0.2, 0.5, 0.8, 1],
+                    repeat: Infinity,
+                    repeatDelay: 1.3
+                  }}
+                  >
+                  <StylizedLogoMark/>
+                  </motion.div>
+                    
                     <div className="signal-line rotate-180 bg-gradient-to-t"/>
 
                    
@@ -117,7 +140,7 @@ const AnimatedContent = () => {
               </React.Fragment>
             )
           })}
-       </div>
+       </motion.div>
   )
 }
 

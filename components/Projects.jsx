@@ -4,6 +4,8 @@ import { projects } from '@/app/constants'
 import Link from 'next/link';
 import link from "lucide-react"
 import { CardWithForm } from './Card';
+import { motion } from 'framer-motion';
+import { fadeIn } from '@/variants';
 
 export const projectSS = [
     "/project_assets/scrollVoyage.png",
@@ -32,16 +34,31 @@ const Projects = () => {
 
 
   return (
-    <section id='work' className='mt-[1500px] lg:flex flex-col justify-center items-center text-center w-full lg:mt-[100px] my_work'>
-        <h2 className='text-6xl font-bold text-gray-300 my-7'>Projects</h2>
+    <section id='work' className='mt-[1500px] lg:flex flex-col justify-center items-center text-center w-full lg:mt-[200px] my_work'>
+        <motion.h2
+        variants={fadeIn('up',0.3)}
+        initial='hidden'
+        whileInView={'show'}
+        viewport={{once:false,amount:0.6}} 
+        className='text-6xl font-bold text-gray-300 my-[42px]'>Projects</motion.h2>
         {projects.map((item)=>(
             <div key={item.id} className='flex justify-center items-center'>
-                <div className='mb-8'>
+                <motion.div
+                variants={fadeIn('up',0.3)}
+                initial='hidden'
+                whileInView={'show'}
+                viewport={{once:false,amount:0.6}} 
+                className='mb-[48px]'>
                     <CardWithForm item={item}/>
-                </div>
+                </motion.div>
             
         
-            <div className='hidden lg:flex flex-col lg:flex-row items-center justify-center w-[80%] h-[350px] bg-background mt-7 rounded-xl mb-8 border-solid border-input border-[1px] ' key={item.title}>
+            <motion.div
+            variants={fadeIn('up',0.3)}
+            initial='hidden'
+            whileInView={'show'}
+            viewport={{once:false,amount:0.6}}
+            className='hidden lg:flex flex-col lg:flex-row items-center justify-center w-[80%] h-[350px] bg-background mt-7 rounded-xl mb-8 border-solid border-input border-[1px] ' key={item.title}>
                         <div className='flex-[0.8] flex justify-center '>
                         <div className='bg-gray-500 w-[80%] text-center items-center cursor-pointer border-2 transform transition-transform hover:scale-105'>
                             <Link href={projectLinks[item.id]} target="_blank" rel="noopener noreferrer" passHref>
@@ -72,7 +89,7 @@ const Projects = () => {
                             
                             </div>
                         </div>
-            </div>
+            </motion.div>
             </div>
                 
             )
