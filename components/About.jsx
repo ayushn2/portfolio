@@ -40,7 +40,7 @@ const About = () => {
       </motion.div>
       <motion.div
         variants={fadeIn('left',0.4)}
-        initial={`${window.innerHeight>window.innerWidth?"visible":"hidden"}`}
+        initial="hidden"
         whileInView={'show'}
         viewport={{once:false,amount:0.7}} 
         className={`flex-[1] items-center justify-center p-0 m-0` }>
