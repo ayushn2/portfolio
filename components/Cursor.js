@@ -12,8 +12,8 @@ const Cursor = () => {
   const cursorVisible = useRef(true);
   const cursorEnlarged = useRef(false);
 
-  const endX = useRef(window.innerWidth / 2);
-  const endY = useRef(window.innerHeight / 2);
+  const endX = useRef(innerWidth / 2);
+  const endY = useRef(innerHeight / 2);
   const _x = useRef(0);
   const _y = useRef(0);
 

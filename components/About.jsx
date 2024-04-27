@@ -1,6 +1,5 @@
 import React from 'react'
 import Image from 'next/image'
-import { styles } from '@/app/style'
 import {useRef,useState} from "react"
 import "../app/styles.css"
 import {Canvas} from "@react-three/fiber"
