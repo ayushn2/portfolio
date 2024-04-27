@@ -1,11 +1,9 @@
 import { useEffect, useRef } from 'react';
-
+import { useWindowSize } from '@uidotdev/usehooks';
 
 const Cursor = () => {
 
-  const screenWidth = document.documentElement.clientWidth || document.body.clientWidth;
-const screenHeight = document.documentElement.clientHeight || document.body.clientHeight;
-
+  const size = useWindowSize();
 
   const delay = 18;
 
@@ -15,8 +13,8 @@ const screenHeight = document.documentElement.clientHeight || document.body.clie
   const cursorVisible = useRef(true);
   const cursorEnlarged = useRef(false);
 
-  const endX = useRef(screenWidth / 2);
-  const endY = useRef(screenHeight / 2);
+  const endX = useRef(size.width / 2);
+  const endY = useRef(size.height / 2);
   const _x = useRef(0);
   const _y = useRef(0);
 
