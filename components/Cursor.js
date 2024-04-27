@@ -3,8 +3,9 @@ import { useEffect, useRef } from 'react';
 
 const Cursor = () => {
 
-  const screenWidth = screen.width;
-  const screenHeight = screen.height;
+  const screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+const screenHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+
 
   const delay = 18;
 
