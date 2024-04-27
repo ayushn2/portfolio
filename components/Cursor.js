@@ -2,6 +2,10 @@ import { useEffect, useRef } from 'react';
 
 
 const Cursor = () => {
+
+  const screenWidth = screen.width;
+  const screenHeight = screen.height;
+
   const delay = 18;
 
   const dot = useRef(null);
@@ -10,8 +14,8 @@ const Cursor = () => {
   const cursorVisible = useRef(true);
   const cursorEnlarged = useRef(false);
 
-  const endX = useRef(innerWidth / 2);
-  const endY = useRef(innerHeight / 2);
+  const endX = useRef(screenWidth / 2);
+  const endY = useRef(screenHeight / 2);
   const _x = useRef(0);
   const _y = useRef(0);
 
