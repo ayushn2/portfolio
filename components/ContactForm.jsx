@@ -39,28 +39,28 @@ export default function ContactUsForm() {
   }
 
   return (
-    <div className='w-10/12 md:w-6/12'>
+    <div className='w-full'>
       <form
         onSubmit={handleSubmit(onSubmit)} // updated code
-        className='mb-10 mt-5 flex w-full flex-col rounded-md bg-white p-5 py-14 shadow-lg md:max-w-3xl md:px-10 mx-auto'
+        className='mb-10 mt-5 flex w-full flex-col rounded-md bg-input-trans p-5 py-14 shadow-lg md:max-w-3xl md:px-10 mx-auto'
       >
         <input
-          className='mt-4 mb-3 h-14 block w-full rounded-md border px-3 text-gray-600 outline-none focus:border-stone-500 focus:outline-none md:mb-0'
+          className='bg-transparent border-b py-6 pl-4 focus:outline-none focus:rounded-md focus:border-stone-500 ring-green-500 font-light text-gray-500'
           type='text'
           placeholder='Name'
           required
           {...register('name')}
         />
         <input
-          className='mt-4 mb-3 h-14 block w-full rounded-md border px-3 text-gray-600 outline-none focus:border-stone-500 focus:outline-none md:mb-0'
+          className='bg-transparent border-b py-6 pl-4 focus:outline-none focus:rounded-md focus:border-stone-500 ring-green-500 font-light text-gray-500'
           type='email'
           placeholder='Email'
           required
           {...register('email')}
         />
         <textarea
-          className='mt-4 mb-5 block w-full rounded-md border px-3 text-gray-600 outline-none focus:border-stone-500 focus:outline-none md:mb-0'
-          placeholder='Message Us'
+          className='mt-4 mb-5 block border-b w-fullrounded-md px-3 text-gray-300 bg-transparent outline-none focus:border-stone-500 focus:outline-none md:mb-0'
+          placeholder='Message'
           rows={6}
           required
           {...register('message')}
@@ -69,9 +69,9 @@ export default function ContactUsForm() {
         <button
           disabled={isSubmitting}
           type='submit'
-          className='bg-blue-700 px-6 py-3 disabled:bg-gray-500 block-primary rounded-md cursor-pointer text-white mt-4 font-bold'
+          className='px-10 mt-8 py-2 bg-[#130F49] text-gray-50 font-light rounded-md text-lg flex flex-row items-center justify-center'
         >
-          Book Appointment
+          Send Message
         </button>
       </form>
     </div>

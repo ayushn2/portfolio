@@ -9,9 +9,9 @@ export async function POST(req) {
 
   try {
     const data = await resend.emails.send({
-      from: 'Hello <ayush@ayushnainwal.live>', // your verified domain
-        to: `${email}`, // the email address you want to send a message
-      subject: `${name} has a message!`,
+      from: 'User <ayush@ayushnainwal.live>', // your verified domain
+        to: "iayush.n2@gmail.com", // the email address you want to send a message
+      subject: `${name} wants to contact you`,
       react: MessageUsEmail({ name, email, message }),
     });
 

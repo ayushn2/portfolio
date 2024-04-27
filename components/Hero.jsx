@@ -13,7 +13,7 @@ import AnimatedContent from "./AnimatedContent"
 
 const Hero = () => {
   return (
-    <div id="skills" className='flex flex-col items-center text-center w-full sm:mt-[40px] lg:pt-[600px] md:pt-[600px] relative'>
+    <div id="skills" className='flex flex-col items-center text-center w-full sm:mt-[70px] lg:pt-[600px] md:pt-[600px] relative'>
       
       <StarBackground/>
        <div className="absolute top-1/4 translate-x-[-1/2]">

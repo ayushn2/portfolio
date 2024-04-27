@@ -9,6 +9,7 @@ const Avatar = ({ isMobile }) => {
   const [play,setPlay] = useState(0)
   const avatar = useGLTF("./desktop_pc/avatar.glb");
   const { actions, names } = useAnimations(avatar.animations, avatar.scene);
+  
 	useEffect(() => {
 		actions.Waving.play();
     

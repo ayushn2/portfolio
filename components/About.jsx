@@ -18,7 +18,7 @@ const About = () => {
         variants={fadeIn('right',0.4)}
         initial='hidden'
         whileInView={'show'}
-        viewport={{once:false,amount:0.7}} 
+        viewport={{once:true,amount:0.7}} 
         className='flex-[1.5]  items-center justify-center'>
         <h2 className={`font-bold text-4xl lg:text-6xl md:text-6xl m-10 lg:mx-20`}>Hey It&apos;s Ayush <br/> I&apos;m a  <br/>
         <span className='text-ring'>Full Stack Developer</span>
@@ -29,10 +29,7 @@ const About = () => {
       <div className="button-borders lg:mx-20 mx-10 my-10">
       <a href='#work'>
           <button className="primary-button bg-primary-foreground">
-            
-              View My Work
-           
-            
+            View My Work
           </button>
           </a>
           
@@ -42,7 +39,7 @@ const About = () => {
         variants={fadeIn('left',0.4)}
         initial="hidden"
         whileInView={'show'}
-        viewport={{once:false,amount:0.7}} 
+        viewport={{once:true,amount:0.7}} 
         className={`flex-[1] items-center justify-center p-0 m-0` }>
         <Avatar/>
       </motion.div>

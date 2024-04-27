@@ -12,6 +12,8 @@ import { useCallback } from 'react';
 import Footer from '@/components/Footer';
 import Projects from '@/components/Projects';
 import Contact from '@/components/Contact';
+import Cursor from '@/components/Cursor';
+
 
 
 
@@ -22,7 +24,7 @@ export default function Home() {
 },[]);
   return (
   <div>
-  
+    <Cursor/>
     <div className='lg:h-[14px] h-[118px] md:[188px]' />
     <Particles 
     className='w-full h-full absolute translate-z-0 z-6'
