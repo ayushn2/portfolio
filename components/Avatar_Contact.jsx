@@ -9,12 +9,11 @@ import { useRef } from "react";
 
 const AvatarContact = ({ isMobile }) => {
   const [play,setPlay] = useState(0)
-  const avatar = useGLTF("./desktop_pc/contact_avatar_re.glb");
+  const avatar = useGLTF("./desktop_pc/avatar_contact.glb");
   const { actions, names } = useAnimations(avatar.animations, avatar.scene);
-  console.log(actions)
 
 	useEffect(() => {
-		actions.TextingAgain.play();
+		actions.Texting_Again.play();
     
 	},[]);
   // const hasEffectRun = useRef(false);
@@ -28,7 +27,7 @@ const AvatarContact = ({ isMobile }) => {
     <group>
       <hemisphereLight intensity={0.75} groundColor='black' />
       <directionalLight
-        intensity={1} // Adjust intensity as needed
+        intensity={0.75} // Adjust intensity as needed
         position={[5, 0, 5]} // Adjust position to focus on the avatar
         castShadow // Enable shadow casting
         shadow-mapSize-width={1024} // Shadow map size

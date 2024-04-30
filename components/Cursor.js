@@ -1,6 +1,5 @@
 import { useEffect, useRef } from 'react';
 import { useWindowSize } from '@uidotdev/usehooks';
-
 const Cursor = () => {
 
   const size = useWindowSize();

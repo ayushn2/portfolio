@@ -10,7 +10,7 @@ const Contact = () => {
  
 
   return (
-    <main id='contact' className='flex flex-col justify-center items-center'>
+    <main id='contact' className='flex flex-col justify-center items-center gradient'>
         <motion.h2
          variants={fadeIn('up',0.3)}
          initial='hidden'
