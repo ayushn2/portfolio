@@ -29,6 +29,7 @@ const Contact = () => {
           whileInView={'show'}
           viewport={{once:false,amount:0.6}} 
           className='flex-1 hidden lg:flex justify-center items-center'>
+            
                 <AvatarContact/>
           </motion.div>
           <motion.div 

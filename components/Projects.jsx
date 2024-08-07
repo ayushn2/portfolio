@@ -9,23 +9,23 @@ import { fadeIn } from '@/variants';
 
 export const projectSS = [
     "/project_assets/scrollVoyage.png",
-     "/project_assets/zingle.png",
+     "/project_assets/blogbreeze.png",
      "/project_assets/artistPage.png",
-     "/project_assets/prometeo.png",
+     "/project_assets/zingle.png",
  ]
 
  export const projectLinks = [
     "https://scroll-voyage.vercel.app/",
-    "https://zingle.vercel.app/",
+    "https://blog-breeze-onee.vercel.app/",
     "https://mia-reynolds-xi.vercel.app/",
-    "https://prometeo.in",
+    "https://zingle.vercel.app/"
  ]
 
  export const projectGitHub=[
     "https://github.com/ayushn2/ScrollVoyage",
     "https://github.com/ayushn2/zingle",
     "https://github.com/ayushn2/music_app",
-   
+    "https://github.com/ayushn2/zingle",
     "/",
  ]
 

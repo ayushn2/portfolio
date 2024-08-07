@@ -80,16 +80,17 @@ export const projects=[
   },
   {
     id:1,
-    title:"Zingle",
+    title:"Blog breeze",
       gif:"/project_assets/scrollVoyage.png",
       description:[
-        "The website offers a group chat platform with text editing and deletion. Users sign in via email for a personalized experience. A live listener ensures real-time updates and message deletions.",
+        "Developed a dynamic blog platform using Next.js, Supabase, Tailwind CSS, and TypeScript, enabling users to read and create blogs.",
         "I employed Next.js, TypeScript, and Supabase for database management. Shadcn UI crafted the UI.Ensured type safety using typescript.",
        
       ],
       teckStack:[
         "Next JS",
        "Tailwind",
+       "Supabase",
         "Typescript",
 ]
   },
@@ -110,17 +111,18 @@ export const projects=[
   },
   {
     id:3,
-    title:"Prometeo Website",
+    title:"Zingle",
       gif:"",
       description:[
-        "This project was the website for Prometeo,the tech fest at IIT Jodhpur",
-       "I designed and developed the Navbar, as well as pages for teams, past speakers, and campus ambassadors. Additionally, I implemented functionality to fetch data from the database and present it on the frontend.",
+        "The website offers a group chat platform with text editing and deletion. Users sign in via email for a personalized experience. A live listener ensures real-time updates and message deletions.",
+        "I employed Next.js, TypeScript, and Supabase for database management. Shadcn UI crafted the UI.Ensured type safety using typescript.",
        
       ],
       teckStack:[
-        "React JS",
-        "CSS",
-        "Django",
+        "Next JS",
+        "TypeScript",
+        "Tailwind CSS",
+        "Supabase",
       ]
   },
   // {
