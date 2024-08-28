@@ -23,7 +23,7 @@ const About = () => {
         <span className='text-ring'>Full Stack Developer</span>
         </h2>
         <p className=' lg:mx-20 mx-10 text-[12px] lg:text-xl' style={{color:"grey"}}>
-        Crafting user experiences that seamlessly blend form and function is my passion as a frontend developer.
+        Crafting user experiences that seamlessly blend form and function is my passion as a Software Developer.
         </p>
       <div className="button-borders lg:mx-20 mx-10 my-10">
       <a href='#work'>
