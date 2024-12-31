@@ -78,39 +78,9 @@ export const projects=[
     
    
   },
+
   {
     id:1,
-    title:"Blog breeze",
-      gif:"/project_assets/scrollVoyage.png",
-      description:[
-        "Developed a dynamic blog platform using Next.js, Supabase, Tailwind CSS, and TypeScript, enabling users to read and create blogs.",
-        "I employed Next.js, TypeScript, and Supabase for database management. Shadcn UI crafted the UI.Ensured type safety using typescript.",
-       
-      ],
-      teckStack:[
-        "Next JS",
-       "Tailwind",
-       "Supabase",
-        "Typescript",
-]
-  },
-  {
-    id:2,
-    title:"Artist Page",
-    gif:"",
-    description:[
-      "The website was made to display all the details of the upcoming shows of an artist",
-      "I utilized Next.js and Tailwind CSS in the development of this website. Additionally, I integrated GSAP for implementing captivating animations, thereby enhancing the visual appeal and user experience of the site.",
-     
-    ],
-    teckStack:[
-      "React JS",
-      "Next JS",
-      "Tailwind",
-  ]
-  },
-  {
-    id:3,
     title:"Zingle",
       gif:"",
       description:[
